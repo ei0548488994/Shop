@@ -1,7 +1,7 @@
 function AddToCart() {
     return (
         <>
-            <button className="add-to-cart-btn">add to cart</button>
+            <button className="add-to-cart-btn">go to cart</button>
         </>
     )
 }

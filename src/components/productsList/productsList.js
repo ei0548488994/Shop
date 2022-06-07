@@ -1,19 +1,14 @@
 import React from "react";
 import ProductCard from '../productCard/productCard'
 import productsListJSON from '../../products.json'
+import './productsList.css'
 function ProductsList() {
-    let array = [
-        { "name": "phone", "id": "1", "image": "", "price": "150" },
-        { "name": "phone", "id": "1", "image": "", "price": "150" },
-        { "name": "phone", "id": "1", "image": "", "price": "150" },
-        { "name": "phone", "id": "1", "image": "", "price": "150" }
-    ]
     let products = productsListJSON.map((product, index) =>
-        <div className="wrapper" key={index}>
+        <div key={index}>
             <ProductCard product={product}></ProductCard>
         </div>)
     return (
-        <div>{products}</div>
+        <div className="cards_list">{products}</div>
     )
 }
-export default ProductsList;
+export default ProductsList; 
